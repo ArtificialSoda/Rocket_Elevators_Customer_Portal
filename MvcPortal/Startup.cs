@@ -8,8 +8,6 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.EntityFrameworkCore;
-using System.Data;
 
 namespace MvcPortal
 {
@@ -26,9 +24,6 @@ namespace MvcPortal
     {
         services.AddControllersWithViews();
         services.AddRazorPages();
-        
-        services.AddDbContext<MvcPortalContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MvcPortalContext")));
-
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
