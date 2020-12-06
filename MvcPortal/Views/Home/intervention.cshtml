@@ -3,9 +3,62 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="row ">
-    <div class="col-sm d-flex justify-content-center align-items-center">
-        <h1>Request an intervention</h1>
-        <h2 style="margin-top: 40">[IN PROGRESS]</h2>
+<div class="row justify-content-center">
+    <div class="text-center">
+        <h1>Request an intervention.</h1>
+        <h2 style="font-weight: lighter">Fill out the form below to request an intervention on one of your products.</h2>
     </div>
 </div>
+<div class="tab-content" id="submission-tabContent" style="margin-top: 50px">        
+    <fieldset>
+        <input type="hidden" name="action" value="intervention_send" />
+        <div class="col-md-4 mx-auto text-center text-blue offset-md-3">
+            <label for="intervention_clients"><b>CLIENT *</b></label>
+            <select id="client" onChange="change_client()" class="form-control pointer" name="intervention[customer_id]" disabled required>
+                <option value="">--- Select One ---</option> 
+            </select>
+        </div>
+        </br>
+        <div class="col-md-4 mx-auto text-center text-blue offset-md-3">
+            <label for="intervention_building"><b>BUILDING *</b></label>
+            <select id="select_building" onChange="change_building()" class="form-control pointer text-center" name="intervention[building_id]" required>
+                <option value="">--- Select One ---</option>
+            </select>
+        </div>
+        </br>
+        <div class="col-md-4 mx-auto col text-blue align-self-center text-center">
+            <label for="intervention_battery"><b>BATTERY *</b></label>
+            <select id="select_battery" onChange="change_battery()" class="form-control pointer text-center" name="intervention[battery_id]" required>
+                <option value="">--- Select One ---</option>
+            </select>
+        </div>
+        </br>
+        <div class="col-md-4 mx-auto text-blue justify-content-center text-center">
+            <label for="intervention_column"><b>COLUMN *</b></label>
+            <select id="select_column" onChange="change_column()" class="form-control pointer text-center" name="intervention[column_id]" required>
+                <option value="">--- Select One ---</option>
+                <option value="Nil">None</option>
+            </select>
+        </div>
+        </br>
+        <div class="col-md-4 mx-auto text-blue text-center">
+            <label for="intervention_elevator"><b>ELEVATOR *</b></label>
+            <select id="elevator" class="form-control pointer text-center" name="intervention[elevator_id]" required>
+                <option value="">--- Select One ---</option>
+                <option value="Nil">None</option>
+            </select>
+        </div>
+        </br>
+        <div class="col-md-4 mx-auto text-blue text-center">
+            <label for="intervention_employee"><b>EMPLOYEE</b></label>
+            <select id="employee" class="form-control pointer text-center" name="intervention[employee_id]">
+                <option value="">--- Select one ---</option>
+            </select>
+        </div>
+        </br>
+        <div class="col-md-4 mx-auto text-blue text-center">   
+            <button type="submit" class="btn btn-primary " style="width: 100%; margin-top: 40px" >Submit My Intervention</button>
+        </div>
+    </fieldset>
+</div>
+

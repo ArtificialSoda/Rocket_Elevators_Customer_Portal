@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Logging;
 using MvcPortal.Models;
 
@@ -18,7 +19,14 @@ namespace MvcPortal.Controllers
             _logger = logger;
         }
 
+        [Authorize]
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public IActionResult Intervention()
         {
             return View();
         }
