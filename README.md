@@ -9,6 +9,8 @@ We had to build a portal for RocketElevators' customers. There, customers can lo
 URL for the customers' portal: https://rocketelevators-customers-portal.azurewebsites.net
 URL for the REST API used to power the portal: https://rocket-elevators-api-rest.azurewebsites.net/
 
+GitHub repo the updated REST API: https://github.com/ArtificialSoda/Rocket-Elevator-Foundation-REST
+
 
 ## How to use 
 To login, you must already have a Customer account on our MySQL database.
