@@ -77,7 +77,7 @@ namespace MvcPortal.Areas.Identity.Pages.Account
             {
 
                 var client = new HttpClient();
-                var res = await client.GetAsync("https://apirocketelevators.azurewebsites.net/api/customer/all"); // Gets all the customers in the MySQL database
+                var res = await client.GetAsync("https://rocket-elevators-api-rest.azurewebsites.net/api/customer/all"); // Gets all the customers in the MySQL database
                 var content = res.Content.ReadAsStringAsync().Result;
 
                 if (content.Contains(Input.Email))

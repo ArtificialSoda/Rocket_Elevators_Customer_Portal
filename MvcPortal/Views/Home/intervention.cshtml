@@ -15,7 +15,7 @@
         <div class="col-md-4 mx-auto text-center text-blue offset-md-3">
             <label for="intervention_clients"><b>CLIENT *</b></label>
             <select id="client" onChange="change_client()" class="form-control pointer" name="intervention[customer_id]" disabled required>
-                <option value="">--- Select One ---</option> 
+                <option value="">@ViewBag.Customer</option>
             </select>
         </div>
         </br>
@@ -23,6 +23,10 @@
             <label for="intervention_building"><b>BUILDING *</b></label>
             <select id="select_building" onChange="change_building()" class="form-control pointer text-center" name="intervention[building_id]" required>
                 <option value="">--- Select One ---</option>
+                @foreach (var item in @ViewBag.Buildings)
+                {
+                    <option value="">@item</option>
+                }
             </select>
         </div>
         </br>

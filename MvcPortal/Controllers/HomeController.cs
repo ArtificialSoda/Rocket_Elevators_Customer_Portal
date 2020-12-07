@@ -26,8 +26,16 @@ namespace MvcPortal.Controllers
         }
 
         [Authorize]
-        public IActionResult Intervention()
+        public async Task<IActionResult> Intervention()
         {
+
+            string customerEmail = User.Identity.Name;
+            var user = await CustomerController.GetCustomer(customerEmail);
+            ViewBag.Customer = user.companyName; // Get customer for the Intervention view
+
+            var buildingsList = await CustomerController.GetCustomerBuildingsList(user.id);
+            ViewBag.Buildings = buildingsList;
+
             return View();
         }
 
