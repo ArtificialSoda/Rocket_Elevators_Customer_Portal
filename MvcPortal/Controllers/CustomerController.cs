@@ -55,6 +55,38 @@ namespace MvcPortal.Controllers
             return customerBuildingsList;
         }
 
+        public static async Task<List<string>> GetCustomerBatteriesList(ulong customer_id)
+        {  
+            var client = new HttpClient();
+            var res = await client.GetAsync(ApiURL($"customer/{customer_id}/batteries"));
+            var content = res.Content.ReadAsStringAsync().Result;
+            
+            var customerBatteriesList = JsonSerializer.Deserialize<List<string>>(content);
+            return customerBatteriesList;
+        }
+
+        public static async Task<List<string>> GetCustomerColumnsList(ulong customer_id)
+        {  
+            var client = new HttpClient();
+            var res = await client.GetAsync(ApiURL($"customer/{customer_id}/columns"));
+            var content = res.Content.ReadAsStringAsync().Result;
+            
+            var customerColumnsList = JsonSerializer.Deserialize<List<string>>(content);
+            return customerColumnsList;
+        }
+
+        public static async Task<List<string>> GetCustomerElevatorsList(ulong customer_id)
+        {  
+            var client = new HttpClient();
+            var res = await client.GetAsync(ApiURL($"customer/{customer_id}/elevators"));
+            var content = res.Content.ReadAsStringAsync().Result;
+            
+            var customerBatteriesList = JsonSerializer.Deserialize<List<string>>(content);
+            return customerBatteriesList;
+        }
+
+
+
         
 
 

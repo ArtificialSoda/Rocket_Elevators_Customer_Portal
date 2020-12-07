@@ -36,6 +36,16 @@ namespace MvcPortal.Controllers
             var buildingsList = await CustomerController.GetCustomerBuildingsList(user.id);
             ViewBag.Buildings = buildingsList;
 
+            var batteriesList = await CustomerController.GetCustomerBatteriesList(user.id);
+            ViewBag.Batteries = batteriesList;
+
+            var columnsList = await CustomerController.GetCustomerColumnsList(user.id);
+            ViewBag.Columns = columnsList;
+
+            var elevatorsList = await CustomerController.GetCustomerElevatorsList(user.id);
+            ViewBag.Elevators = elevatorsList;
+
+        
             return View();
         }
 

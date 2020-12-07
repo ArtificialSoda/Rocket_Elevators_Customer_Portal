@@ -34,6 +34,10 @@
             <label for="intervention_battery"><b>BATTERY *</b></label>
             <select id="select_battery" onChange="change_battery()" class="form-control pointer text-center" name="intervention[battery_id]" required>
                 <option value="">--- Select One ---</option>
+                @foreach (var item in @ViewBag.Batteries)
+                {
+                    <option value="">@item</option>
+                }
             </select>
         </div>
         </br>
@@ -41,6 +45,10 @@
             <label for="intervention_column"><b>COLUMN *</b></label>
             <select id="select_column" onChange="change_column()" class="form-control pointer text-center" name="intervention[column_id]" required>
                 <option value="">--- Select One ---</option>
+                @foreach (var item in @ViewBag.Columns)
+                {
+                    <option value="">@item</option>
+                }
                 <option value="Nil">None</option>
             </select>
         </div>
@@ -49,14 +57,11 @@
             <label for="intervention_elevator"><b>ELEVATOR *</b></label>
             <select id="elevator" class="form-control pointer text-center" name="intervention[elevator_id]" required>
                 <option value="">--- Select One ---</option>
+                @foreach (var item in @ViewBag.Elevators)
+                {
+                    <option value="">@item</option>
+                }
                 <option value="Nil">None</option>
-            </select>
-        </div>
-        </br>
-        <div class="col-md-4 mx-auto text-blue text-center">
-            <label for="intervention_employee"><b>EMPLOYEE</b></label>
-            <select id="employee" class="form-control pointer text-center" name="intervention[employee_id]">
-                <option value="">--- Select one ---</option>
             </select>
         </div>
         </br>

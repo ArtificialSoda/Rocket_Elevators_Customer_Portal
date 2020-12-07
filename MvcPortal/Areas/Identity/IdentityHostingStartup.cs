@@ -17,7 +17,8 @@ namespace MvcPortal.Areas.Identity
             builder.ConfigureServices((context, services) => {
                 services.AddDbContext<MvcPortalIdentityDbContext>(options =>
                     options.UseSqlServer(
-                        context.Configuration.GetConnectionString("MvcPortalIdentityDbContextConnection")));
+                        //context.Configuration.GetConnectionString("MvcPortalIdentityDbContextConnection")));
+                        context.Configuration.GetConnectionString("FabienDimitrovDB-Prod")));
 
                 services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                     .AddEntityFrameworkStores<MvcPortalIdentityDbContext>();
