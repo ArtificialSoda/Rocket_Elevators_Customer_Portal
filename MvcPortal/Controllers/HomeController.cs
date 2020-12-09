@@ -49,11 +49,11 @@ namespace MvcPortal.Controllers
             return View();
         }
 
-        // [Authorize]
-        // public async Task<IActionResult> Products()
-        // {
-        //     return View();
-        // }
+        [Authorize]
+        public async Task<IActionResult> Products()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {
