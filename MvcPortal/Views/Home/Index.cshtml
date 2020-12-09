@@ -2,10 +2,64 @@
     ViewData["Title"] = "Home Page";
 }
 
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/essentials.css" rel="stylesheet" />
+	<link href="~/css/layout.css" rel="stylesheet" /> 
+	<link href="~/css/extralayers.css" rel="stylesheet" /> 
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
 <div class="text-center">
     <h1 class="display-4">Welcome to the Portal, dear customer!</h1>
-    <p>Feel free to check out your inventory - Batteries, Columns, Elevators - or to make a Intervention request.</p>
+    <p>This is your own special portal where you're free to interact with and checkout your current &copy;RocketElevators inventory.</p>
 </div>
-<div class="text-center" style="margin-top: 100px">
-    <h2 class="display-4">[HOME PAGE STILL IN ALPHA]</h2>
+
+<section id="services" class="text-center" style="margin-top: 100px">
+                <h2 class="display-4">About the portal</h2>
+				<div class="container">
+
+					<div class="row">
+						<div class="col-sm-4">
+						
+							<img class="img-fluid" style="cursor: pointer" src="~/images/1stribbon-1.jpg" alt="img" />
+							<h5 class="mt-30">Make an Intervention request</h3>
+							<p>Quickly make a custom <strong>Intervention</strong> request for one of your products. Our team will immediately assign you a support employee.</p> 
+						</div>
+
+						<div class="col-sm-4">
+							<img class="img-fluid" style="cursor: pointer" src="~/images/1stribbon-2.jpg" alt="img" />
+							</a>
+							<h5 class="mt-30">View your products on the fly</h3>
+							<p>Be informed 24/7 about the status of your products - Buildings, Batteries, Columns, Elevators - by the click of a button. </p>
+						</div>
+
+						<div class="col-sm-4">
+							<img class="img-fluid" style="cursor: pointer" src="~/images/1stribbon-3.jpg" alt="img" />
+							<h5 class="mt-30">Update your Customer info</h3>
+							<p>Easily edit your address and other relevant info in case it ever changes and you need to update it.</p>
+						</div>
+					</div>
+				</div>
+	</section>
+
+<div class="text-center justify-content-center" style="margin-top: 100px">
+    <h2 class="display-4">Where to find us</h2>
+    <div class="col-md-12 col-sm-12">
+
+							<div id="map2" class="h-600">
+								<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=589&amp;height=600&amp;hl=en&amp;q=4468%20Wellington%20St,%20Verdun,%20Quebec%20H4G%201W5%20Montreal+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+							</div>
+
+							<hr />
+
+							<div>
+								<p class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 4468 Wellington St Suite 204, Verdun, Quebec H4G 1W5</p>
+								<p class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">(581) 701-0303</a></p>
+								<p class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">info@rocketelevators.biz</a></p>
+							</div>
+
+						</div>
 </div>

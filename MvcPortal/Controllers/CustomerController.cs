@@ -35,6 +35,8 @@ namespace MvcPortal.Controllers
             return customersList;
         }
 
+
+        // GET logged-in Customer (by email)
         public static async Task<Customer> GetCustomer(string customer_email)
         {
             var client = new HttpClient();
@@ -45,6 +47,7 @@ namespace MvcPortal.Controllers
             return customer;
         }
 
+        // GET all buildings of Customer
         public static async Task<List<string>> GetCustomerBuildingsList(ulong customer_id)
         {  
             var client = new HttpClient();
@@ -55,6 +58,7 @@ namespace MvcPortal.Controllers
             return customerBuildingsList;
         }
 
+        // GET all batteries of Customer
         public static async Task<List<string>> GetCustomerBatteriesList(ulong customer_id)
         {  
             var client = new HttpClient();
@@ -65,6 +69,8 @@ namespace MvcPortal.Controllers
             return customerBatteriesList;
         }
 
+
+        // GET all columns of Customer
         public static async Task<List<string>> GetCustomerColumnsList(ulong customer_id)
         {  
             var client = new HttpClient();
@@ -75,6 +81,8 @@ namespace MvcPortal.Controllers
             return customerColumnsList;
         }
 
+
+        // GET all elevators of Customer
         public static async Task<List<string>> GetCustomerElevatorsList(ulong customer_id)
         {  
             var client = new HttpClient();

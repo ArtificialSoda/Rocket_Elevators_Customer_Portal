@@ -20,7 +20,7 @@ namespace MvcPortal.Areas.Identity
                         //context.Configuration.GetConnectionString("MvcPortalIdentityDbContextConnection")));
                         context.Configuration.GetConnectionString("FabienDimitrovDB-Prod")));
 
-                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                     .AddEntityFrameworkStores<MvcPortalIdentityDbContext>();
             });
         }

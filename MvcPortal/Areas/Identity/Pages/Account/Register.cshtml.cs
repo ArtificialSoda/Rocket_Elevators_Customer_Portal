@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using MvcPortal.Controllers;
 
 namespace MvcPortal.Areas.Identity.Pages.Account
 {
@@ -77,7 +78,7 @@ namespace MvcPortal.Areas.Identity.Pages.Account
             {
 
                 var client = new HttpClient();
-                var res = await client.GetAsync("https://rocket-elevators-api-rest.azurewebsites.net/api/customer/all"); // Gets all the customers in the MySQL database
+                var res = await client.GetAsync(CustomerController.ApiURL("customer/all")); // Gets all the customers in the MySQL database
                 var content = res.Content.ReadAsStringAsync().Result;
 
                 if (content.Contains(Input.Email))
