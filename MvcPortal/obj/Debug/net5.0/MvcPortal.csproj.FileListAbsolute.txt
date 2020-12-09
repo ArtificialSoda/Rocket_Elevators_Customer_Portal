@@ -189,3 +189,4 @@ C:\Users\dimit\Codeboxx\Deliverables\Odyssey\Week11\Rocket_Elevators_Customer_Po
 C:\Users\dimit\Codeboxx\Deliverables\Odyssey\Week11\Rocket_Elevators_Customer_Portal\MvcPortal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\dimit\Codeboxx\Deliverables\Odyssey\Week11\Rocket_Elevators_Customer_Portal\MvcPortal\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\dimit\Codeboxx\Deliverables\Odyssey\Week11\Rocket_Elevators_Customer_Portal\MvcPortal\obj\Debug\net5.0\Razor\Views\Home\intervention.cshtml.g.cs
+C:\Users\dimit\Codeboxx\Deliverables\Odyssey\Week11\Rocket_Elevators_Customer_Portal\MvcPortal\obj\Debug\net5.0\Razor\Views\Home\Products.cshtml.g.cs

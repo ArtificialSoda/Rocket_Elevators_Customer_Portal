@@ -15663,6 +15663,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\dimit\\Codeboxx\\Deliverables\\Odyssey\\Week11\\Rocket_Elevators_Customer_Portal\\MvcPortal\\Views\\Home\\Products.cshtml",
+      "TargetPath": "Views\\Home\\Products.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\dimit\\Codeboxx\\Deliverables\\Odyssey\\Week11\\Rocket_Elevators_Customer_Portal\\MvcPortal\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
       "FileKind": "mvc"
